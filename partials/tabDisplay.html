@@ -1,0 +1,9 @@
+<div class="container content-display" id="content-display" ng-controller="scrollController">
+    <ul class="search-result">
+        <asset-item ng-repeat="item in state.activeTab.searchData.result"></asset-item>
+    </ul>
+    <div class="pending-data" ng-if="state.activeTab.dataPending">
+        <img src="img/loading_200x150.gif">
+    </div>
+</div>
+<asset-display ng-show="displayItem.show"></asset-display>

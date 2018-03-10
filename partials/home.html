@@ -1,0 +1,12 @@
+<div ng-controller="baseController" class="wrapper smooth">
+    <div id="title" class="container center-title smooth">
+        <h1>Welcome to the Media Browser in a Browser</h1>
+        <h4>You can serach for you favorite video in YouTube.com and Blah, Blah, Blah....</h4>
+    </div>
+    <div class="main-view">
+        <div ng-include="'partials/tabControl.html'" ng-controller="tabsController"></div>
+        <div ng-include="'partials/searchForm.html'" ng-controller="searchController"></div>
+        
+        <div ng-include="'partials/tabDisplay.html'" ng-controller="tabDisplayController"></div>
+    </div>
+</div>
