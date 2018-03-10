@@ -1,4 +1,4 @@
-var app = angular.module('tagas', ["ngRoute", "ngResource"]);
+var app = angular.module('tagas', ["ngRoute"]);
 
 app.constant('youtubeConfig',{
     baseURL: "https://content.googleapis.com/youtube/v3/search",
